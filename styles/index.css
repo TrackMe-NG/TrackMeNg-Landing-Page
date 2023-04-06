@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"); /*  MIXINS VARIABLES */
+/*  */
 .container_main {
   padding: 0 1rem;
 }
@@ -23,7 +24,6 @@
   }
 }
 
-/* ---------------------------------HEADERS VARIABLES--------------------------------- */
 /* -----------------------------------------FONT-WEIGHTS----------------------------------------- */
 .fw_400 {
   font-weight: 400;
@@ -53,6 +53,12 @@
   font-size: 0.9rem;
   line-height: normal;
   letter-spacing: 0em;
+}
+.small_quotes.center {
+  text-align: center;
+  width: 100%;
+  max-width: 65rem;
+  margin: 0 auto;
 }
 @media screen and (min-width: 400px) {
   .small_quotes {
@@ -90,7 +96,46 @@
   }
 }
 
-/* ----------------------------------NAV-BTN---------------------------------- */
+/* -------------------------------------BUTTONS VARIABLES -------------------------------------*/
+.btn_main {
+  background: #00ca54;
+  color: #fff;
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 13rem;
+  height: 3rem;
+  max-width: 100%;
+  margin: 2.2rem auto;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+@media screen and (min-width: 576px) {
+  .btn_main {
+    width: 17rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn_main {
+    width: 15rem;
+    margin: 2.2rem 0;
+  }
+}
+.btn_main > span {
+  margin-top: 0.5em;
+  color: #fff;
+}
+.btn_main:hover {
+  opacity: 1;
+}
+
+/* ---------------------------NAV-BTN--------------------------- */
 .nav_btn {
   padding: 1rem 2rem;
   border: 1px solid #00ca54;
@@ -109,7 +154,7 @@
   background: #00ca54;
 }
 
-/* FLEX_BOX VARIABLE */
+/*------------------------------ FLEX_BOX VARIABLE ------------------------------*/
 .flex_box {
   display: grid;
   justify-content: center;
@@ -126,6 +171,7 @@
   .flex_box {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row !important;
     align-items: center;
     text-align: left;
     margin: 4rem 0;
@@ -136,6 +182,9 @@
   font-weight: 700;
   line-height: 5rem;
   letter-spacing: 0em;
+}
+.flex_box_header.center {
+  text-align: center;
 }
 @media screen and (min-width: 576px) {
   .flex_box_header {
@@ -149,7 +198,7 @@
   }
 }
 
-/* IMAGE BOX */
+/* ---------------------------------IMAGE BOX--------------------------------- */
 .image_box {
   padding: 0.5rem;
   position: relative;
@@ -187,45 +236,6 @@
   width: 100%;
   height: 100%;
   z-index: 10;
-}
-
-/* BUTTONS VARIABLES */
-.btn_main {
-  background: #00ca54;
-  color: #fff;
-  border-radius: 4rem;
-  font-weight: 700;
-  font-size: 1.1rem;
-  width: 13rem;
-  height: 3rem;
-  max-width: 100%;
-  margin: 2.2rem auto;
-  display: flex;
-  border: none;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-  opacity: 0.8;
-  cursor: pointer;
-}
-@media screen and (min-width: 576px) {
-  .btn_main {
-    width: 17rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn_main {
-    width: 15rem;
-    margin: 2.2rem 0;
-  }
-}
-.btn_main > span {
-  margin-top: 0.4rem;
-  color: #fff;
-}
-.btn_main:hover {
-  opacity: 1;
 }
 
 /* STYLES-SUMMARY NOTES
@@ -449,7 +459,7 @@ header .navbar_inner .toogle_btn {
 }
 header .dropdown_menu {
   position: absolute;
-  top: 4.3rem;
+  top: 4.2rem;
   z-index: 10;
   border-radius: 1rem;
   padding: 1.54rem 0;
@@ -509,6 +519,7 @@ main {
 }
 main .main_inner {
   /* -------------------------------------HERO SECTION------------------------------------- */
+  /*----------------------------CHOOSE-US SECTION---------------------------- */
   /*----------------------------CHOOSE-US SECTION---------------------------- */
 }
 main .main_inner .hero_sec {
@@ -600,8 +611,7 @@ main .main_inner .choose_us_sec .contents_list {
 }
 @media screen and (min-width: 992px) {
   main .main_inner .choose_us_sec .contents_list {
-    gap: 2rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 }
 main .main_inner .choose_us_sec .contents_header {
@@ -634,11 +644,113 @@ main .main_inner .choose_us_sec .contents_header .green_dot {
   border-radius: 50%;
 }
 main .main_inner .choose_us_sec .contents_quotes {
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   text-align: left;
 }
-@media screen and (min-width: 992px) {
-  main .main_inner .choose_us_sec .contents_quotes {
-    margin: 1rem 0;
+main .main_inner .section_services_bottom {
+  margin: 2rem 0;
+}
+main .main_inner .section_services_flexbox {
+  width: 100%;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 576px) {
+  main .main_inner .section_services_flexbox {
+    padding: 1.5rem;
   }
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .section_services_flexbox {
+    gap: 1.2rem;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main_inner .section_services_flexbox {
+    gap: 1.5rem;
+  }
+}
+main .main_inner .section_services_flexbox .box {
+  border-radius: 1rem;
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: 100%;
+  min-height: 46vh;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  cursor: pointer;
+}
+main .main_inner .section_services_flexbox .box:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+main .main_inner .section_services_flexbox .box:nth-child(1) {
+  background: #fff;
+}
+main .main_inner .section_services_flexbox .box:nth-child(2) {
+  background: #d0f8ff;
+}
+main .main_inner .section_services_flexbox .box:nth-child(3) {
+  background: linear-gradient(0deg, rgba(0, 110, 42, 0.05), rgba(0, 110, 42, 0.05)), #fcfdf7;
+}
+main .main_inner .section_services_flexbox .box_inner {
+  padding: 1rem;
+}
+main .main_inner .section_services_flexbox .box_header {
+  font-family: "Montserrat", sans-serif;
+  color: #008a37;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  text-align: left;
+}
+@media screen and (min-width: 576px) {
+  main .main_inner .section_services_flexbox .box_header {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+main .main_inner .section_services_flexbox .box_quotes {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: left;
+  color: #1f1f1f;
+  width: 100%;
+  max-width: 22rem;
+}
+main .main_inner .section_services_flexbox .box .header_flex {
+  font-family: "Montserrat", sans-serif;
+  color: #008a37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.25px;
+  text-align: left;
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .section_services_flexbox .box .header_flex {
+    justify-content: flex-start;
+  }
+}
+main .main_inner .section_services_flexbox .box .header_flex span {
+  margin-top: 0.5em;
+  color: #fff;
+  color: #008a37;
+}
+main .main_inner .section_services_flexbox .box_img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+main .main_inner .section_services_flexbox .box_img img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
