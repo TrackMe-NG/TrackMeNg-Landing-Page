@@ -116,6 +116,10 @@
   opacity: 0.8;
   cursor: pointer;
 }
+.btn_main.form {
+  width: 100%;
+  margin: 0 auto;
+}
 @media screen and (min-width: 576px) {
   .btn_main {
     width: 17rem;
@@ -520,6 +524,7 @@ main {
 main .main_inner {
   /* -------------------------------------HERO SECTION------------------------------------- */
   /*----------------------------CHOOSE-US SECTION---------------------------- */
+  /*---------------------------OUR-SERVICES SECTION---------------------------- */
   /*----------------------------CHOOSE-US SECTION---------------------------- */
 }
 main .main_inner .hero_sec {
@@ -699,6 +704,12 @@ main .main_inner .section_services_flexbox .box:nth-child(3) {
 }
 main .main_inner .section_services_flexbox .box_inner {
   padding: 1rem;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .section_services_flexbox .box_inner {
+    text-align: left;
+  }
 }
 main .main_inner .section_services_flexbox .box_header {
   font-family: "Montserrat", sans-serif;
@@ -706,7 +717,6 @@ main .main_inner .section_services_flexbox .box_header {
   font-size: 1.6rem;
   line-height: 3.2rem;
   font-weight: 600;
-  text-align: left;
 }
 @media screen and (min-width: 576px) {
   main .main_inner .section_services_flexbox .box_header {
@@ -716,12 +726,16 @@ main .main_inner .section_services_flexbox .box_header {
 }
 main .main_inner .section_services_flexbox .box_quotes {
   font-size: 1rem;
-  font-weight: 500;
   line-height: 1.5rem;
-  text-align: left;
   color: #1f1f1f;
   width: 100%;
   max-width: 22rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .section_services_flexbox .box_quotes {
+    font-weight: 500;
+  }
 }
 main .main_inner .section_services_flexbox .box .header_flex {
   font-family: "Montserrat", sans-serif;
@@ -730,16 +744,17 @@ main .main_inner .section_services_flexbox .box .header_flex {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.8rem;
   letter-spacing: 0.25px;
-  text-align: left;
   cursor: pointer;
+  margin-block: 1rem 3rem;
 }
 @media screen and (min-width: 992px) {
   main .main_inner .section_services_flexbox .box .header_flex {
     justify-content: flex-start;
+    font-size: 1.1rem;
   }
 }
 main .main_inner .section_services_flexbox .box .header_flex span {
@@ -752,5 +767,95 @@ main .main_inner .section_services_flexbox .box_img {
   margin: 0 auto;
 }
 main .main_inner .section_services_flexbox .box_img img {
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .form_left {
+    width: 100%;
+  }
+}
+main .main_inner .form_left form {
+  width: 100vw;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  main .main_inner .form_left form {
+    max-width: 45rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .form_left form {
+    width: 48vw;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .main_inner .form_left form {
+    gap: 1.8rem;
+  }
+}
+main .main_inner .form_left form input {
+  height: 3rem;
+  width: 100vw;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background: #edeff3;
+}
+main .main_inner .form_left form input::-moz-placeholder {
+  color: #767873;
+  font-family: Roboto;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+main .main_inner .form_left form input::placeholder {
+  color: #767873;
+  font-family: Roboto;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+main .main_inner .form_left form textarea {
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background: #edeff3;
+}
+main .main_inner .form_left form textarea::-moz-placeholder {
+  color: #767873;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+main .main_inner .form_left form textarea::placeholder {
+  color: #767873;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+main .main_inner .form_right {
+  max-width: 100%;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .form_right {
+    width: 100%;
+  }
+}
+main .main_inner .form_right img {
   width: 100%;
 }/*# sourceMappingURL=index.css.map */
