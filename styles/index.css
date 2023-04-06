@@ -23,6 +23,7 @@
   }
 }
 
+/* ---------------------------------HEADERS VARIABLES--------------------------------- */
 /* -----------------------------------------FONT-WEIGHTS----------------------------------------- */
 .fw_400 {
   font-weight: 400;
@@ -89,6 +90,7 @@
   }
 }
 
+/* ----------------------------------NAV-BTN---------------------------------- */
 .nav_btn {
   padding: 1rem 2rem;
   border: 1px solid #00ca54;
@@ -115,6 +117,10 @@
   align-items: center;
   margin: 2rem 0;
   gap: 2rem;
+}
+.flex_box.reverse {
+  display: flex;
+  flex-direction: column-reverse;
 }
 @media screen and (min-width: 992px) {
   .flex_box {
@@ -503,6 +509,7 @@ main {
 }
 main .main_inner {
   /* -------------------------------------HERO SECTION------------------------------------- */
+  /*----------------------------CHOOSE-US SECTION---------------------------- */
 }
 main .main_inner .hero_sec {
   width: 100vw;
@@ -577,6 +584,61 @@ main .main_inner .hero_left_quotes {
     margin-block: 1rem 3rem;
   }
 }
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_right {
+    width: 45%;
+  }
+}
 main .main_inner .hero_right > img {
   width: 100%;
+}
+main .main_inner .choose_us_sec .contents_list {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .choose_us_sec .contents_list {
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+}
+main .main_inner .choose_us_sec .contents_header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .choose_us_sec .contents_header {
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .choose_us_sec .contents_header {
+    gap: 1rem;
+  }
+}
+main .main_inner .choose_us_sec .contents_header .green_dot {
+  background: #008a37;
+  width: 1rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+main .main_inner .choose_us_sec .contents_quotes {
+  margin: 0.5rem 0;
+  text-align: left;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .choose_us_sec .contents_quotes {
+    margin: 1rem 0;
+  }
 }/*# sourceMappingURL=index.css.map */

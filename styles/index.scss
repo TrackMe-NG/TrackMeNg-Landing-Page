@@ -296,8 +296,55 @@ main {
       }
 
       &_right {
+        @media screen and (min-width: 992px) {
+          width: 45%;
+        }
         & > img {
           width: 100%;
+        }
+      }
+    }
+
+    /*----------------------------CHOOSE-US SECTION---------------------------- */
+
+    .choose_us {
+      &_sec {
+        .contents {
+          &_list {
+            display: grid;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            @media screen and (min-width: 992px) {
+              gap: 2rem;
+              margin-top: 1rem;
+            }
+          }
+          &_header {
+            @include small_header();
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            @media screen and (min-width: 992px) {
+              gap: 1rem;
+            }
+            .green_dot {
+              background: $primary;
+              width: 1rem;
+              aspect-ratio: 1/1;
+              border-radius: 50%;
+            }
+          }
+
+          &_quotes {
+            margin: 0.5rem 0;
+            text-align: left;
+
+            @media screen and (min-width: 992px) {
+              margin: 1rem 0;
+            }
+          }
         }
       }
     }
