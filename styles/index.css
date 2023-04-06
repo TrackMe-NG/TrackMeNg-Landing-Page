@@ -23,6 +23,7 @@
   }
 }
 
+/* -----------------------------------------FONT-WEIGHTS----------------------------------------- */
 .fw_400 {
   font-weight: 400;
 }
@@ -45,14 +46,37 @@
 
 /*  TEXT VARIABLES */
 .small_quotes {
-  font-size: 1rem;
-  line-height: 1.5rem;
   color: #454743;
   width: 100%;
   max-width: 35rem;
+  font-size: 0.9rem;
+  line-height: normal;
+  letter-spacing: 0em;
+}
+@media screen and (min-width: 400px) {
+  .small_quotes {
+    font-size: 1.1rem;
+    max-width: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .small_quotes {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .small_quotes {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+.small_quotes.hero {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 @media screen and (min-width: 576px) {
-  .small_quotes {
+  .small_quotes.hero {
     max-width: 38rem;
     line-height: 2rem;
     font-size: 1.5rem;
@@ -83,6 +107,82 @@
   background: #00ca54;
 }
 
+/* FLEX_BOX VARIABLE */
+.flex_box {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .flex_box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    margin: 4rem 0;
+  }
+}
+.flex_box_header {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0em;
+}
+@media screen and (min-width: 576px) {
+  .flex_box_header {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .flex_box_header {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+
+/* IMAGE BOX */
+.image_box {
+  padding: 0.5rem;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .image_box {
+    padding: 0.8rem;
+  }
+}
+.image_box .inner_box {
+  border: 5px solid #00ca54;
+  border-radius: 0.6rem;
+  width: 9rem;
+  height: 6rem;
+  z-index: -1;
+  position: absolute;
+}
+@media screen and (min-width: 576px) {
+  .image_box .inner_box {
+    width: 12rem;
+    height: 9rem;
+    border: 8px solid #00ca54;
+    border-radius: 1rem;
+  }
+}
+.image_box .inner_box.right {
+  top: 0;
+  right: 0;
+}
+.image_box .inner_box.left {
+  left: 0;
+  bottom: 0;
+}
+.image_box img {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
 /* BUTTONS VARIABLES */
 .btn_main {
   background: #00ca54;
@@ -93,7 +193,7 @@
   width: 13rem;
   height: 3rem;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 2.2rem auto;
   display: flex;
   border: none;
   align-items: center;
@@ -111,7 +211,7 @@
 @media screen and (min-width: 992px) {
   .btn_main {
     width: 15rem;
-    margin: 0;
+    margin: 2.2rem 0;
   }
 }
 .btn_main > span {
