@@ -1,4 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+.container_main {
+  padding: 0 1rem;
+}
+@media screen and (min-width: 576px) {
+  .container_main {
+    padding: 0 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container_main {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container_main {
+    padding: 0 4rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container_main {
+    padding: 0 6rem;
+  }
+}
+
+.fw_400 {
+  font-weight: 400;
+}
+
+.fw_500 {
+  font-weight: 500;
+}
+
+.fw_600 {
+  font-weight: 600;
+}
+
+.fw_700 {
+  font-weight: 700;
+}
+
+.primary_header {
+  color: #008a37;
+}
+
+/*  TEXT VARIABLES */
+.small_quotes {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #454743;
+  width: 100%;
+  max-width: 35rem;
+}
+@media screen and (min-width: 576px) {
+  .small_quotes {
+    max-width: 38rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .small_quotes.hero {
+    line-height: 1.8rem;
+    color: #767873;
+  }
+}
+
 .nav_btn {
   padding: 1rem 2rem;
   border: 1px solid #00ca54;
@@ -15,6 +81,45 @@
 .nav_btn:hover {
   color: #fff;
   background: #00ca54;
+}
+
+/* BUTTONS VARIABLES */
+.btn_main {
+  background: #00ca54;
+  color: #fff;
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 13rem;
+  height: 3rem;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+@media screen and (min-width: 576px) {
+  .btn_main {
+    width: 17rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn_main {
+    width: 15rem;
+    margin: 0;
+  }
+}
+.btn_main > span {
+  margin-top: 0.4rem;
+  color: #fff;
+}
+.btn_main:hover {
+  opacity: 1;
 }
 
 /* STYLES-SUMMARY NOTES
@@ -135,17 +240,17 @@ header .navbar {
 }
 @media screen and (min-width: 576px) {
   header .navbar {
-    padding: 0 1.5rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  header .navbar {
     padding: 0 1rem;
   }
 }
 @media screen and (min-width: 1200px) {
   header .navbar {
     padding: 0 4rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header .navbar {
+    padding: 0 6rem;
   }
 }
 header .navbar ul {
@@ -196,6 +301,11 @@ header .navbar_inner .nav_logo {
   header .navbar_inner .nav_logo {
     width: 12rem;
     height: 6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .navbar_inner .nav_logo {
+    inset: 0 -2.4rem;
   }
 }
 header .navbar_inner .nav_btn {
@@ -284,10 +394,89 @@ header .dropdown_menu ul li:hover {
 
 main {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
 }
 @media screen and (min-width: 992px) {
   main {
-    margin-top: 6.5rem;
+    margin-top: 6rem;
   }
+}
+main .main_inner {
+  /* -------------------------------------HERO SECTION------------------------------------- */
+}
+main .main_inner .hero_sec {
+  width: 100vw;
+  min-height: 80vh;
+  background: #fff;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_sec {
+    background: linear-gradient(-180deg, rgba(198, 255, 198, 0.13) 90%, rgb(255, 255, 255) 100%);
+  }
+}
+main .main_inner .hero_sec_inner {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_sec_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 4rem 0;
+  }
+}
+main .main_inner .hero_left_header {
+  font-size: 1.9rem;
+  max-width: 38rem;
+}
+@media (min-width: 400px) and (max-width: 425px) {
+  main .main_inner .hero_left_header {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 575px) {
+  main .main_inner .hero_left_header {
+    max-width: 35rem;
+    font-size: 2.7rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  main .main_inner .hero_left_header {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_left_header {
+    font-size: 3rem;
+    line-height: 1.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main_inner .hero_left_header {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .main_inner .hero_left_header {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+main .main_inner .hero_left_quotes {
+  margin-block: 1rem 1.5rem;
+}
+@media screen and (min-width: 576px) {
+  main .main_inner .hero_left_quotes {
+    margin-block: 1rem 3rem;
+  }
+}
+main .main_inner .hero_right > img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

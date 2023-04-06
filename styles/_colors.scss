@@ -1,6 +1,11 @@
 $primary: #008a37;
 $secondary: #454743;
 $secondary_bg: #323638;
+$hero_bg: linear-gradient(
+  -180deg,
+  rgba(198, 255, 198, 0.13) 90%,
+  rgba(255, 255, 255, 1) 100%
+);
 $white: #fff;
 $black: #000;
 $light_text: #767873;

@@ -65,15 +65,14 @@ header {
     padding-right: 1rem;
 
     @media screen and (min-width: 576px) {
-      padding: 0 1.5rem;
-    }
-
-    @media screen and (min-width: 992px) {
       padding: 0 1rem;
     }
 
     @media screen and (min-width: 1200px) {
       padding: 0 4rem;
+    }
+    @media screen and (min-width: 1400px) {
+      padding: 0 6rem;
     }
 
     ul {
@@ -110,6 +109,7 @@ header {
         }
       }
     }
+
     &_inner {
       display: flex;
       align-items: center;
@@ -124,6 +124,9 @@ header {
         @media screen and (min-width: 992px) {
           width: 12rem;
           height: 6rem;
+        }
+        @media screen and (min-width: 1200px) {
+          inset: 0 -2.4rem;
         }
       }
       .nav_btn {
@@ -220,11 +223,83 @@ header {
 
 main {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   @media screen and (min-width: 992px) {
-    margin-top: 6.5rem;
+    margin-top: 6rem;
   }
-  // border: 1px solid red;
   .main_inner {
+    /* -------------------------------------HERO SECTION------------------------------------- */
+
+    .hero {
+      &_sec {
+        width: 100vw;
+        min-height: 80vh;
+        background: $white;
+        @media screen and (min-width: 992px) {
+          background: $hero_bg;
+        }
+
+        &_inner {
+          display: grid;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          margin: 2rem 0;
+          gap: 2.5rem;
+
+          @media screen and (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            margin: 4rem 0;
+          }
+        }
+      }
+
+      &_left {
+        &_header {
+          font-size: 1.9rem;
+          max-width: 38rem;
+
+          @media (min-width: 400px) and (max-width: 425px) {
+            font-size: 2rem;
+          }
+
+          @media screen and (min-width: 426px) and (max-width: 575px) {
+            max-width: 35rem;
+            font-size: 2.7rem;
+          }
+          @media screen and (min-width: 576px) {
+            font-size: 3.2rem;
+          }
+          @media screen and (min-width: 992px) {
+            font-size: 3rem;
+            line-height: 1.5em;
+          }
+          @media screen and (min-width: 1200px) {
+            font-size: 3.5rem;
+            line-height: 5rem;
+          }
+          @media screen and (min-width: 1400px) {
+            font-size: 4rem;
+            line-height: 6rem;
+          }
+        }
+
+        &_quotes {
+          margin-block: 1rem 1.5rem;
+          @media screen and (min-width: 576px) {
+            margin-block: 1rem 3rem;
+          }
+        }
+      }
+
+      &_right {
+        & > img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
