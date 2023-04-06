@@ -1,3 +1,60 @@
+.container_main {
+  padding: 0 1rem;
+
+  @media screen and (min-width: 576px) {
+    padding: 0 1.5rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 0 1rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 4rem;
+  }
+  @media screen and (min-width: 1400px) {
+    padding: 0 6rem;
+  }
+}
+
+.fw_400 {
+  font-weight: 400;
+}
+.fw_500 {
+  font-weight: 500;
+}
+.fw_600 {
+  font-weight: 600;
+}
+.fw_700 {
+  font-weight: 700;
+}
+
+.primary_header {
+  color: $primary;
+}
+
+/*  TEXT VARIABLES */
+.small_quotes {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $secondary;
+  width: 100%;
+  max-width: 35rem;
+
+  @media screen and (min-width: 576px) {
+    max-width: 38rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+  &.hero {
+    @media screen and (min-width: 992px) {
+      line-height: 1.8rem;
+      color: $light_text;
+    }
+  }
+}
+
 .nav_btn {
   padding: 1rem 2rem;
   border: 1px solid $btn_bg;
@@ -14,6 +71,43 @@
   &:hover {
     color: $white;
     background: $btn_bg;
+  }
+}
+
+/* BUTTONS VARIABLES */
+.btn_main {
+  background: $btn_bg;
+  color: $white;
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 13rem;
+  height: 3rem;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+  @media screen and (min-width: 576px) {
+    width: 17rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 15rem;
+    margin: 0;
+  }
+  & > span {
+    margin-top: 0.4rem;
+    color: $white;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }
 
