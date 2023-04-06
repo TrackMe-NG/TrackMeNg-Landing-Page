@@ -1,6 +1,65 @@
+.nav_btn {
+  padding: 1rem 2rem;
+  border: 1px solid $btn_bg;
+  border-radius: 6rem;
+  background: $white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: $btn_bg;
+
+  &.mobile {
+    padding: 0.6rem 2.2rem;
+    font-size: 1rem;
+  }
+  &:hover {
+    color: $white;
+    background: $btn_bg;
+  }
+}
+
 /* STYLES-SUMMARY NOTES
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif;
 
 */
+
+/* media screens */
+
+/*
+            @media screen and (min-width: 1800px) {
+
+
+            }
+              @media screen and (min-width: 1800px) {
+            }
+            @media screen and (min-width: 1400px) {
+
+            }
+             @media screen and (min-width: 1600px) {
+             
+            
+            }
+
+             @media screen and (min-width: 1200px) {
+
+             }
+
+     @media screen and (min-width: 992px) {
+       
+    }
+
+    @media screen and (min-width: 768px) {
+
+    }
+        
+        @media screen and (min-width: 576px) {
+          
+        } 
+        
+        @media screen and (min-width: 400px) {
+          
+        } 
+        
+        
+        */
