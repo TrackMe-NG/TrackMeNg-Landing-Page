@@ -17,6 +17,22 @@
   }
 }
 
+/* ---------------------------------HEADERS VARIABLES--------------------------------- */
+@mixin small_header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  color: $dark_text;
+
+  @media screen and (min-width: 992px) {
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+}
+
 /* -----------------------------------------FONT-WEIGHTS----------------------------------------- */
 
 .fw_400 {
@@ -73,6 +89,8 @@
   }
 }
 
+/* ----------------------------------NAV-BTN---------------------------------- */
+
 .nav_btn {
   padding: 1rem 2rem;
   border: 1px solid $btn_bg;
@@ -101,6 +119,11 @@
   align-items: center;
   margin: 2rem 0;
   gap: 2rem;
+
+  &.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   @media screen and (min-width: 992px) {
     display: flex;
