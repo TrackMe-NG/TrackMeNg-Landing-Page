@@ -69,6 +69,10 @@
   line-height: normal;
   letter-spacing: 0em;
 
+  &.white {
+    color: $white;
+  }
+
   &.center {
     text-align: center;
     width: 100%;
