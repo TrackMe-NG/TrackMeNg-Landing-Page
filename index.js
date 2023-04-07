@@ -6,11 +6,6 @@ const menu = document.querySelector(".dropdown_menu");
 const slides = document.querySelectorAll(".slides");
 const dots = document.querySelectorAll(".dot");
 
-/* MORE TEXT VARIABLES */
-const moreDots = document.querySelector("#more_dots");
-const moreText = document.querySelector("#more");
-const btnText = document.querySelector("#more_btn");
-
 /* NAV-FUNCTIONS */
 toogleBtn.onclick = () => {
   menu.classList.toggle("open");
@@ -68,16 +63,30 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-/* MORE TEXT FUNCTION */
+/* MORE TEXT VARIABLES */
+const moreDots = document.querySelectorAll(".more_dots");
+const moreTexts = document.querySelectorAll(".more");
+const btnTexts = document.querySelectorAll(".more_btn");
 
+/* MORE TEXT FUNCTION */
 const readMore = () => {
-  if (moreDots.style.display === "none") {
-    moreDots.style.display = "inline";
-    btnText.innerHTML = "Learn more";
-    moreText.style.display = "none";
-  } else {
-    moreDots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
+  moreDots.forEach((moreDot) => {
+    moreTexts.forEach((moreText) => {
+      btnTexts.forEach((btnText) => {
+        if (moreDot.style.display === "none") {
+          moreDot.style.display = "inline";
+          btnText.innerHTML = "Learn more";
+          moreText.style.display = "none";
+        } else {
+          moreDot.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      });
+    });
+  });
 };
+
+btnTexts.forEach((btnText) => {
+  btnText.addEventListener("click", readMore);
+});
