@@ -276,6 +276,10 @@
 /* READ MORE TEXT */
 .more {
   display: none;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+  }
 }
 
 /* STYLES-SUMMARY NOTES
