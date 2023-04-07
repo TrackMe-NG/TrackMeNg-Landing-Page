@@ -99,6 +99,10 @@
   }
 }
 
+.text_white {
+  color: #fff;
+}
+
 /* -------------------------------------BUTTONS VARIABLES -------------------------------------*/
 .btn_main {
   background: #00ca54;
@@ -243,6 +247,25 @@
   width: 100%;
   height: 100%;
   z-index: 10;
+}
+
+/* SLIDER ANIMATION */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* READ MORE TEXT */
+#more {
+  display: none;
 }
 
 /* STYLES-SUMMARY NOTES
@@ -530,6 +553,7 @@ main .main_inner {
   /*---------------------------OUR-SERVICES SECTION---------------------------- */
   /*----------------------------CHOOSE-US SECTION---------------------------- */
   /*---------------------------NEWS-UPDATE SECTION---------------------------- */
+  /*---------------------------TEAM SECTION---------------------------- */
 }
 main .main_inner .hero_sec {
   width: 100vw;
@@ -1036,4 +1060,127 @@ main .main_inner .news_right img {
     max-width: 100%;
     height: 30rem;
   }
+}
+main .main_inner .team_sec {
+  background: #323638;
+  color: #fff;
+  margin: 3rem 0;
+}
+main .main_inner .team_slides {
+  width: 100%;
+}
+main .main_inner .team_slides .slides {
+  margin: 1rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #1f1f1f;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+main .main_inner .team_slides .slides_inner {
+  width: 100%;
+  height: 100%;
+}
+main .main_inner .team_slides .slides_top {
+  width: 100%;
+}
+main .main_inner .team_slides .slides_top img {
+  width: 100%;
+}
+main .main_inner .team_slides .slides_bottom {
+  padding: 0.4rem;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+main .main_inner .team_slides .slides_bottom_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+main .main_inner .team_slides .slides_bottom_header_dot {
+  background: #002108;
+  width: 0.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+main .main_inner .team_slides .slides_bottom .team_name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1f1f1f;
+}
+main .main_inner .team_slides .slides_bottom .team_role {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #525252;
+}
+main .main_inner .team_slides .slides_bottom_quotes {
+  font-size: 0.8rem;
+  color: #3d3d3d;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+main .main_inner .team_slides .slides_bottom .read_more_sec {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  color: #00ca54;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+main .main_inner .team_slides .slides_bottom .read_more_sec span {
+  display: grid;
+  align-items: center;
+  cursor: pointer;
+}
+main .main_inner .team_navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+main .main_inner .team_navigation_icon {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+main .main_inner .team_navigation_icon:hover {
+  transform: scale(1.1);
+}
+main .main_inner .team_navigation_dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  inset: -0.3rem 0;
+}
+main .main_inner .team_navigation_dot .dot {
+  cursor: pointer;
+  width: 0.6rem;
+  aspect-ratio: 1/1;
+  margin: 0 0.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+main .main_inner .team_navigation_dot .dot:hover, main .main_inner .team_navigation_dot .dot.active {
+  background: #00ca54;
 }/*# sourceMappingURL=index.css.map */
