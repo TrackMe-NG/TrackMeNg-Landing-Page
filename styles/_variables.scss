@@ -108,6 +108,9 @@
   }
 }
 
+.text_white {
+  color: $white;
+}
 /* -------------------------------------BUTTONS VARIABLES -------------------------------------*/
 
 .btn_main {
@@ -205,6 +208,7 @@
     &.center {
       text-align: center;
     }
+
     @media screen and (min-width: 576px) {
       font-size: 2.7rem;
     }
@@ -253,6 +257,25 @@
     height: 100%;
     z-index: 10;
   }
+}
+
+/* SLIDER ANIMATION */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* READ MORE TEXT */
+#more {
+  display: none;
 }
 
 /* STYLES-SUMMARY NOTES
