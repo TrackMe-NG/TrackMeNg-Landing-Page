@@ -1,12 +1,28 @@
 const toogleBtn = document.querySelector(".toogle_btn");
 const toogleBtnIcon = document.querySelector(".toogle_btn i");
 const menu = document.querySelector(".dropdown_menu");
+const menuLists = document.querySelectorAll(".menu_lists li");
 
 /* TEAM SECTION */
 const slides = document.querySelectorAll(".slides");
 const dots = document.querySelectorAll(".dot");
 
 /* NAV-FUNCTIONS */
+
+/* ACTIVE LINKS */
+const removeActive = () => {
+  menuLists.forEach((link) => {
+    link.classList.remove("active");
+  });
+};
+
+menuLists.forEach((link) => {
+  link.addEventListener("click", () => {
+    removeActive();
+    link.classList.add("active");
+  });
+});
+
 toogleBtn.onclick = () => {
   menu.classList.toggle("open");
 

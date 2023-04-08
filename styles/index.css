@@ -281,6 +281,12 @@
   color: #00ca54;
 }
 
+/* ACTIVE LINKS */
+.menu_lists li.active {
+  color: #008a37;
+  font-weight: 600;
+}
+
 /* STYLES-SUMMARY NOTES
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
@@ -509,8 +515,7 @@ header .dropdown_menu {
   padding: 1.54rem 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background: #fff;
   width: 100%;
   display: flex;
   align-items: center;
