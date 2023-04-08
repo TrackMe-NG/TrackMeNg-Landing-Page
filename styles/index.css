@@ -273,6 +273,14 @@
   }
 }
 
+/* LINK TEXT */
+.link_text {
+  text-decoration: underline;
+}
+.link_text.primary:hover {
+  color: #00ca54;
+}
+
 /* STYLES-SUMMARY NOTES
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
@@ -352,6 +360,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 input {
@@ -558,6 +567,7 @@ main .main_inner {
   /*---------------------------OUR-SERVICES SECTION---------------------------- */
   /*----------------------------CHOOSE-US SECTION---------------------------- */
   /*---------------------------NEWS-UPDATE SECTION---------------------------- */
+  /*---------------------------TEAM SECTION---------------------------- */
   /*---------------------------TEAM SECTION---------------------------- */
 }
 main .main_inner .hero_sec {
@@ -1283,4 +1293,151 @@ main .main_inner .team_navigation_dot .dot {
 }
 main .main_inner .team_navigation_dot .dot:hover, main .main_inner .team_navigation_dot .dot.active {
   background: #00ca54;
+}
+main .main_inner .footer {
+  background: #323638;
+  color: #fff;
+}
+main .main_inner .footer_inner {
+  padding: 1.5rem 0;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_inner {
+    padding: 3rem 0;
+  }
+}
+main .main_inner .footer_desktop_top {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_desktop_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+main .main_inner .footer_top {
+  display: grid;
+  align-items: center;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 576px) {
+  main .main_inner .footer_top {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_top {
+    justify-content: space-around;
+  }
+}
+main .main_inner .footer_top .quick_links > ul {
+  display: grid;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_top .quick_links > ul {
+    gap: 1rem;
+  }
+}
+main .main_inner .footer_top .quick_links > ul li {
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_top .quick_links > ul li {
+    font-size: 1rem;
+  }
+}
+main .main_inner .footer_top .quick_links > ul li:hover {
+  color: #00ca54;
+}
+main .main_inner .footer_top .keep_in_touch > ul {
+  display: grid;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_top .keep_in_touch > ul {
+    gap: 1em;
+  }
+}
+main .main_inner .footer_top .keep_in_touch > ul li {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_top .keep_in_touch > ul li {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+}
+main .main_inner .footer_top .keep_in_touch > ul li .social_name {
+  font-weight: 600;
+}
+main .main_inner .footer_header {
+  font-size: 1.2rem;
+  margin-block: 0 1rem;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_header {
+    font-size: 1.6rem;
+    margin-block: 0 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_mobile_sec {
+    display: none;
+  }
+}
+main .main_inner .footer_line {
+  border: 1px solid #fff;
+  opacity: 0.15;
+  margin: 3rem 0;
+}
+main .main_inner .footer_line.desktop {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_line.desktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .footer_line {
+    margin: 5rem 0;
+  }
+}
+main .main_inner .footer .socials_sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main .main_inner .footer .socials_sec.desktop li {
+  border: 2px solid #ebffe7;
+  width: 3.5rem;
+}
+main .main_inner .footer .socials_sec.desktop li img {
+  width: 2rem;
+  aspect-ratio: 1/1;
+}
+main .main_inner .footer .socials_sec.desktop li img:hover {
+  transform: scale(1.2);
+}
+main .main_inner .footer .socials_sec li {
+  border: 2.7px solid #fff;
+  width: 2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */
