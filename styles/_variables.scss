@@ -293,6 +293,16 @@
   }
 }
 
+/* ACTIVE LINKS */
+.menu_lists {
+  li {
+    &.active {
+      color: $primary;
+      font-weight: 600;
+    }
+  }
+}
+
 /* STYLES-SUMMARY NOTES
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
