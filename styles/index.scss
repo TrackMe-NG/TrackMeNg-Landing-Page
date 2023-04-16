@@ -910,7 +910,7 @@ main {
       }
     }
 
-    /*---------------------------TEAM SECTION---------------------------- */
+    /*---------------------------FOOTER SECTION---------------------------- */
 
     .footer {
       background: $secondary_bg;
@@ -1027,40 +1027,6 @@ main {
 
         @media screen and (min-width: 992px) {
           margin: 5rem 0;
-        }
-      }
-
-      .socials_sec {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-
-        &.desktop {
-          li {
-            border: 2px solid $social_border;
-            width: 3.5rem;
-
-            img {
-              width: 2rem;
-              aspect-ratio: 1/1;
-
-              &:hover {
-                transform: scale(1.2);
-              }
-            }
-          }
-        }
-
-        li {
-          border: 2.7px solid $white;
-          width: 2rem;
-          cursor: pointer;
-          border-radius: 4px;
-          aspect-ratio: 1/1;
-          display: flex;
-          justify-content: center;
-          align-items: center;
         }
       }
     }
