@@ -303,6 +303,81 @@
   }
 }
 
+/* ANIMATED LOGO */
+.social_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+
+  ul {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    @media screen and (min-width: 576px) {
+      gap: 2.5rem;
+    }
+
+    li {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      width: 3.5rem;
+      aspect-ratio: 1/1;
+
+      .fa {
+        font-size: 2.5em;
+        -webkit-text-stroke: 2px var(--clr);
+        color: transparent;
+        padding: 0.2rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        border-bottom: 2px solid var(--clr);
+        transition: 0.5s ease-in-out;
+        font-family: fontAwesome;
+        text-align: center;
+        line-height: 3.5rem;
+        font-size: 2.5em;
+        color: var(--clr);
+        @media screen and (min-width: 576px) {
+          border-bottom: 4px solid var(--clr);
+        }
+      }
+
+      &:hover::before {
+        height: 100%;
+      }
+
+      &:nth-child(1)::before {
+        content: "\f09a";
+      }
+
+      &:nth-child(2)::before {
+        content: "\f16d";
+      }
+
+      &:nth-child(3)::before {
+        content: "\f232";
+      }
+
+      &:nth-child(4)::before {
+        content: "\f099";
+      }
+    }
+  }
+}
+
 /* STYLES-SUMMARY NOTES
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
