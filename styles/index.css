@@ -287,7 +287,8 @@
   font-weight: 600;
 }
 
-/* ANIMATED LOGO */
+/* --------------------------------ANIMATED SECTION-------------------------------- */
+/* --------------------------------ANIMATED LOGO-------------------------------- */
 .social_logos {
   display: flex;
   justify-content: center;
@@ -355,6 +356,19 @@
 }
 .social_logos ul li:nth-child(4)::before {
   content: "\f099";
+}
+
+/* -------------------------------- HERO BG-IMG -------------------------------- */
+.hero_right > img {
+  animation: animateHero 6s ease-in-out infinite;
+}
+@keyframes animateHero {
+  0%, 100% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
 }
 
 /* STYLES-SUMMARY NOTES
