@@ -362,12 +362,25 @@
 .hero_right > img {
   animation: animateHero 6s ease-in-out infinite;
 }
+@media screen and (min-width: 992px) {
+  .hero_right > img {
+    animation: animateHeroDesktop 6s ease-in-out infinite;
+  }
+}
 @keyframes animateHero {
   0%, 100% {
-    transform: translate(0px);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateX(-10px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes animateHeroDesktop {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-15px);
   }
 }
 
