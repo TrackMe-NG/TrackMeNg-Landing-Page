@@ -234,7 +234,7 @@ main {
     .hero {
       &_sec {
         width: 100vw;
-        min-height: 80vh;
+        min-height: 50vh;
         background: $white;
         @media screen and (min-width: 992px) {
           background: $hero_bg;
@@ -253,12 +253,16 @@ main {
             justify-content: space-between;
             align-items: center;
             text-align: left;
-            margin: 4rem 0;
+            gap: 1rem;
           }
         }
       }
 
       &_left {
+        @media screen and (min-width: 992px) {
+          margin-top: 4rem;
+          max-height: fit-content;
+        }
         &_header {
           font-size: 1.9rem;
           max-width: 38rem;
@@ -297,11 +301,122 @@ main {
       }
 
       &_right {
+        overflow: none;
+        position: relative;
         @media screen and (min-width: 992px) {
-          width: 45%;
-        }
-        & > img {
+          height: 100%;
           width: 100%;
+          max-width: 40vw;
+        }
+        @media screen and (min-width: 1200px) {
+          min-height: fit-content;
+        }
+
+        .icon {
+          /* ALL ICONS */
+          &_1,
+          &_2,
+          &_3 {
+            width: 2rem;
+            aspect-ratio: 1/1;
+
+            @media screen and (min-width: 400px) {
+              width: 2.5rem;
+            }
+
+            @media screen and (min-width: 576px) {
+              width: fit-content;
+            }
+          }
+
+          &_1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            animation: animateHeroDesktop 7s ease-in-out infinite;
+
+            @media screen and (min-width: 992px) {
+              animation: animateIcon1 7s ease-in-out infinite;
+            }
+          }
+
+          &_2 {
+            position: absolute;
+            animation: animateHero 7s ease-in-out infinite;
+            z-index: 10;
+            left: 0;
+            bottom: 5rem;
+            @media screen and (min-width: 576px) {
+              bottom: 10rem;
+            }
+          }
+
+          &_3 {
+            position: absolute;
+            animation: animateHeroDesktop 7s ease-in-out infinite;
+            bottom: 0rem;
+            right: 6rem;
+            z-index: 10;
+            @media screen and (min-width: 992px) {
+              right: 7rem;
+            }
+          }
+        }
+        &_inner {
+          overflow: hidden;
+          margin: 0.8rem;
+          padding: 1rem;
+          @media screen and (min-width: 400px) {
+            margin: 1rem;
+            padding: 1rem;
+          }
+          @media screen and (min-width: 768px) {
+            margin: 2rem 0;
+            padding: 0 2rem;
+            max-width: 100%;
+          }
+
+          img {
+            width: 100%;
+            animation: animateHero 8s ease-in-out infinite;
+            @media screen and (min-width: 992px) {
+              animation: animateHeroDesktop 8s ease-in-out infinite;
+            }
+
+            @media screen and (min-width: 1200px) {
+              min-height: 30rem;
+            }
+          }
+
+          @keyframes animateHero {
+            0%,
+            100% {
+              transform: translateY(0px);
+            }
+            50% {
+              transform: translateY(15px);
+            }
+          }
+          @keyframes animateHeroDesktop {
+            0%,
+            100% {
+              transform: translateX(0px);
+            }
+            50% {
+              transform: translateX(18px);
+            }
+          }
+
+          @keyframes animateIcon1 {
+            0%,
+            100% {
+              transform: translateY(0px);
+            }
+            50% {
+              transform: translateY(20px);
+            }
+          }
         }
       }
     }

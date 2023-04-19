@@ -379,35 +379,6 @@
   }
 }
 
-/* -------------------------------- HERO BG-IMG -------------------------------- */
-.hero_right {
-  & > img {
-    animation: animateHero 6s ease-in-out infinite;
-    @media screen and (min-width: 992px) {
-      animation: animateHeroDesktop 4s ease-in-out infinite;
-    }
-  }
-
-  @keyframes animateHero {
-    0%,
-    100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-15px);
-    }
-  }
-  @keyframes animateHeroDesktop {
-    0%,
-    100% {
-      transform: translateX(0px);
-    }
-    50% {
-      transform: translateX(-18px);
-    }
-  }
-}
-
 /* STYLES-SUMMARY NOTES
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;

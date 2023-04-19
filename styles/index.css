@@ -358,32 +358,6 @@
   content: "\f099";
 }
 
-/* -------------------------------- HERO BG-IMG -------------------------------- */
-.hero_right > img {
-  animation: animateHero 6s ease-in-out infinite;
-}
-@media screen and (min-width: 992px) {
-  .hero_right > img {
-    animation: animateHeroDesktop 4s ease-in-out infinite;
-  }
-}
-@keyframes animateHero {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-@keyframes animateHeroDesktop {
-  0%, 100% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(-18px);
-  }
-}
-
 /* STYLES-SUMMARY NOTES
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
@@ -674,7 +648,7 @@ main .main_inner {
 }
 main .main_inner .hero_sec {
   width: 100vw;
-  min-height: 80vh;
+  min-height: 50vh;
   background: #fff;
 }
 @media screen and (min-width: 992px) {
@@ -696,7 +670,14 @@ main .main_inner .hero_sec_inner {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    margin: 4rem 0;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_left {
+    margin-top: 4rem;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
   }
 }
 main .main_inner .hero_left_header {
@@ -745,13 +726,132 @@ main .main_inner .hero_left_quotes {
     margin-block: 1rem 3rem;
   }
 }
+main .main_inner .hero_right {
+  overflow: none;
+  position: relative;
+}
 @media screen and (min-width: 992px) {
   main .main_inner .hero_right {
-    width: 45%;
+    height: 100%;
+    width: 100%;
+    max-width: 40vw;
   }
 }
-main .main_inner .hero_right > img {
+@media screen and (min-width: 1200px) {
+  main .main_inner .hero_right {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+main .main_inner .hero_right .icon {
+  /* ALL ICONS */
+}
+main .main_inner .hero_right .icon_1, main .main_inner .hero_right .icon_2, main .main_inner .hero_right .icon_3 {
+  width: 2rem;
+  aspect-ratio: 1/1;
+}
+@media screen and (min-width: 400px) {
+  main .main_inner .hero_right .icon_1, main .main_inner .hero_right .icon_2, main .main_inner .hero_right .icon_3 {
+    width: 2.5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  main .main_inner .hero_right .icon_1, main .main_inner .hero_right .icon_2, main .main_inner .hero_right .icon_3 {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+main .main_inner .hero_right .icon_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  animation: animateHeroDesktop 7s ease-in-out infinite;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_right .icon_1 {
+    animation: animateIcon1 7s ease-in-out infinite;
+  }
+}
+main .main_inner .hero_right .icon_2 {
+  position: absolute;
+  animation: animateHero 7s ease-in-out infinite;
+  z-index: 10;
+  left: 0;
+  bottom: 5rem;
+}
+@media screen and (min-width: 576px) {
+  main .main_inner .hero_right .icon_2 {
+    bottom: 10rem;
+  }
+}
+main .main_inner .hero_right .icon_3 {
+  position: absolute;
+  animation: animateHeroDesktop 7s ease-in-out infinite;
+  bottom: 0rem;
+  right: 6rem;
+  z-index: 10;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_right .icon_3 {
+    right: 7rem;
+  }
+}
+main .main_inner .hero_right_inner {
+  overflow: hidden;
+  margin: 0.8rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 400px) {
+  main .main_inner .hero_right_inner {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .main_inner .hero_right_inner {
+    margin: 2rem 0;
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+}
+main .main_inner .hero_right_inner img {
   width: 100%;
+  animation: animateHero 8s ease-in-out infinite;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_right_inner img {
+    animation: animateHeroDesktop 8s ease-in-out infinite;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main_inner .hero_right_inner img {
+    min-height: 30rem;
+  }
+}
+@keyframes animateHero {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+@keyframes animateHeroDesktop {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(18px);
+  }
+}
+@keyframes animateIcon1 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
 }
 main .main_inner .choose_us_sec .contents_list {
   display: grid;
