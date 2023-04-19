@@ -384,7 +384,7 @@
   & > img {
     animation: animateHero 6s ease-in-out infinite;
     @media screen and (min-width: 992px) {
-      animation: animateHeroDesktop 6s ease-in-out infinite;
+      animation: animateHeroDesktop 4s ease-in-out infinite;
     }
   }
 
@@ -403,7 +403,7 @@
       transform: translateX(0px);
     }
     50% {
-      transform: translateX(-15px);
+      transform: translateX(-18px);
     }
   }
 }
