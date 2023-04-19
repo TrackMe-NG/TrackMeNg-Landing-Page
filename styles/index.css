@@ -287,6 +287,77 @@
   font-weight: 600;
 }
 
+/* --------------------------------ANIMATED SECTION-------------------------------- */
+/* --------------------------------ANIMATED LOGO-------------------------------- */
+.social_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+.social_logos ul {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (min-width: 576px) {
+  .social_logos ul {
+    gap: 2.5rem;
+  }
+}
+.social_logos ul li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+}
+.social_logos ul li .fa {
+  font-size: 2.5em;
+  -webkit-text-stroke: 2px var(--clr);
+  color: transparent;
+  padding: 0.2rem;
+}
+.social_logos ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 2px solid var(--clr);
+  transition: 0.5s ease-in-out;
+  font-family: fontAwesome;
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: 2.5em;
+  color: var(--clr);
+}
+@media screen and (min-width: 576px) {
+  .social_logos ul li::before {
+    border-bottom: 4px solid var(--clr);
+  }
+}
+.social_logos ul li:hover::before {
+  height: 100%;
+}
+.social_logos ul li:nth-child(1)::before {
+  content: "\f09a";
+}
+.social_logos ul li:nth-child(2)::before {
+  content: "\f16d";
+}
+.social_logos ul li:nth-child(3)::before {
+  content: "\f232";
+}
+.social_logos ul li:nth-child(4)::before {
+  content: "\f099";
+}
+
 /* STYLES-SUMMARY NOTES
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
@@ -573,11 +644,11 @@ main .main_inner {
   /*----------------------------CHOOSE-US SECTION---------------------------- */
   /*---------------------------NEWS-UPDATE SECTION---------------------------- */
   /*---------------------------TEAM SECTION---------------------------- */
-  /*---------------------------TEAM SECTION---------------------------- */
+  /*---------------------------FOOTER SECTION---------------------------- */
 }
 main .main_inner .hero_sec {
   width: 100vw;
-  min-height: 80vh;
+  min-height: 50vh;
   background: #fff;
 }
 @media screen and (min-width: 992px) {
@@ -599,7 +670,14 @@ main .main_inner .hero_sec_inner {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    margin: 4rem 0;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_left {
+    margin-top: 4rem;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
   }
 }
 main .main_inner .hero_left_header {
@@ -648,13 +726,132 @@ main .main_inner .hero_left_quotes {
     margin-block: 1rem 3rem;
   }
 }
+main .main_inner .hero_right {
+  overflow: none;
+  position: relative;
+}
 @media screen and (min-width: 992px) {
   main .main_inner .hero_right {
-    width: 45%;
+    height: 100%;
+    width: 100%;
+    max-width: 40vw;
   }
 }
-main .main_inner .hero_right > img {
+@media screen and (min-width: 1200px) {
+  main .main_inner .hero_right {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+main .main_inner .hero_right .icon {
+  /* ALL ICONS */
+}
+main .main_inner .hero_right .icon_1, main .main_inner .hero_right .icon_2, main .main_inner .hero_right .icon_3 {
+  width: 2rem;
+  aspect-ratio: 1/1;
+}
+@media screen and (min-width: 400px) {
+  main .main_inner .hero_right .icon_1, main .main_inner .hero_right .icon_2, main .main_inner .hero_right .icon_3 {
+    width: 2.5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  main .main_inner .hero_right .icon_1, main .main_inner .hero_right .icon_2, main .main_inner .hero_right .icon_3 {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+main .main_inner .hero_right .icon_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  animation: animateHeroDesktop 7s ease-in-out infinite;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_right .icon_1 {
+    animation: animateIcon1 7s ease-in-out infinite;
+  }
+}
+main .main_inner .hero_right .icon_2 {
+  position: absolute;
+  animation: animateHero 7s ease-in-out infinite;
+  z-index: 10;
+  left: 0;
+  bottom: 5rem;
+}
+@media screen and (min-width: 576px) {
+  main .main_inner .hero_right .icon_2 {
+    bottom: 10rem;
+  }
+}
+main .main_inner .hero_right .icon_3 {
+  position: absolute;
+  animation: animateHeroDesktop 7s ease-in-out infinite;
+  bottom: 0rem;
+  right: 6rem;
+  z-index: 10;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_right .icon_3 {
+    right: 7rem;
+  }
+}
+main .main_inner .hero_right_inner {
+  overflow: hidden;
+  margin: 0.8rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 400px) {
+  main .main_inner .hero_right_inner {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .main_inner .hero_right_inner {
+    margin: 2rem 0;
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+}
+main .main_inner .hero_right_inner img {
   width: 100%;
+  animation: animateHero 8s ease-in-out infinite;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .hero_right_inner img {
+    animation: animateHeroDesktop 8s ease-in-out infinite;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main_inner .hero_right_inner img {
+    min-height: 30rem;
+  }
+}
+@keyframes animateHero {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+@keyframes animateHeroDesktop {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(18px);
+  }
+}
+@keyframes animateIcon1 {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
 }
 main .main_inner .choose_us_sec .contents_list {
   display: grid;
@@ -1418,31 +1615,4 @@ main .main_inner .footer_line.desktop {
   main .main_inner .footer_line {
     margin: 5rem 0;
   }
-}
-main .main_inner .footer .socials_sec {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-main .main_inner .footer .socials_sec.desktop li {
-  border: 2px solid #ebffe7;
-  width: 3.5rem;
-}
-main .main_inner .footer .socials_sec.desktop li img {
-  width: 2rem;
-  aspect-ratio: 1/1;
-}
-main .main_inner .footer .socials_sec.desktop li img:hover {
-  transform: scale(1.2);
-}
-main .main_inner .footer .socials_sec li {
-  border: 2.7px solid #fff;
-  width: 2rem;
-  cursor: pointer;
-  border-radius: 4px;
-  aspect-ratio: 1/1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }/*# sourceMappingURL=index.css.map */
