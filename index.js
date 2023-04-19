@@ -28,13 +28,13 @@ toogleBtn.onclick = () => {
 
   const isOpen = menu.classList.contains("open");
 
-  toogleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+  toogleBtnIcon.classList = isOpen ? "fa fa-times" : "fa fa-bars";
 };
 
 const isClose = () => {
   const isClose = menu.classList.remove("open");
 
-  toogleBtnIcon.classList = isClose ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+  toogleBtnIcon.classList = isClose ? "fa fa-times" : "fa fa-bars";
 };
 
 document.onclick = (e) => {
