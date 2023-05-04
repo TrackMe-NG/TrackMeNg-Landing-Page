@@ -84,9 +84,9 @@ const moreDots = document.querySelectorAll(".more_dots");
 const moreTexts = document.querySelectorAll(".more");
 const btnTexts = document.querySelectorAll(".more_btn");
 /* DESKTOP TEXT VARIABLES */
-const boxDots = document.querySelector(".box_dots");
-const boxMore = document.querySelector(".box_more");
-const boxMoreText = document.querySelector(".box_more_text");
+const boxDots1 = document.querySelector(".box_dots1");
+const boxMore1 = document.querySelector(".box_more1");
+const boxMoreText1 = document.querySelector(".box_more_text1");
 /*  */
 const boxDots2 = document.querySelector(".box_dots2");
 const boxMore2 = document.querySelector(".box_more2");
@@ -124,15 +124,15 @@ btnTexts.forEach((btnText) => {
 });
 
 /* DESKTOP MORE TEXT FUNCTIONS */
-const boxReadMore = () => {
-  if (boxDots.style.display === "none") {
-    boxDots.style.display = "inline";
-    boxMoreText.innerHTML = "Learn more";
-    boxMore.style.display = "none";
+const boxReadMore1 = () => {
+  if (boxDots1.style.display === "none") {
+    boxDots1.style.display = "inline";
+    boxMoreText1.innerHTML = "Learn more";
+    boxMore1.style.display = "none";
   } else {
-    boxDots.style.display = "none";
-    boxMoreText.innerHTML = "Read less";
-    boxMore.style.display = "inline";
+    boxDots1.style.display = "none";
+    boxMoreText1.innerHTML = "Read less";
+    boxMore1.style.display = "inline";
   }
 };
 /*  */
@@ -179,7 +179,7 @@ const boxReadMore3 = () => {
 // };
 
 // boxMoreText.forEach((boxMoreText) => {
-boxMoreText.addEventListener("click", boxReadMore);
+boxMoreText1.addEventListener("click", boxReadMore1);
 boxMoreText2.addEventListener("click", boxReadMore2);
 boxMoreText3.addEventListener("click", boxReadMore3);
 // });
