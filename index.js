@@ -96,6 +96,18 @@ const boxDots3 = document.querySelector(".box_dots3");
 const boxMore3 = document.querySelector(".box_more3");
 const boxMoreText3 = document.querySelector(".box_more_text3");
 /*  */
+const boxDots4 = document.querySelector(".box_dots4");
+const boxMore4 = document.querySelector(".box_more4");
+const boxMoreText4 = document.querySelector(".box_more_text4");
+/*  */
+const boxDots5 = document.querySelector(".box_dots5");
+const boxMore5 = document.querySelector(".box_more5");
+const boxMoreText5 = document.querySelector(".box_more_text5");
+/*  */
+const boxDots6 = document.querySelector(".box_dots6");
+const boxMore6 = document.querySelector(".box_more6");
+const boxMoreText6 = document.querySelector(".box_more_text6");
+/*  */
 // const boxDots = document.querySelectorAll(".box_dots");
 // const boxMore = document.querySelectorAll(".box_more");
 // const boxMoreText = document.querySelectorAll(".box_more_text");
@@ -160,6 +172,42 @@ const boxReadMore3 = () => {
   }
 };
 /*  */
+const boxReadMore4 = () => {
+  if (boxDots4.style.display === "none") {
+    boxDots4.style.display = "inline";
+    boxMoreText4.innerHTML = "Learn more";
+    boxMore4.style.display = "none";
+  } else {
+    boxDots4.style.display = "none";
+    boxMoreText4.innerHTML = "Read less";
+    boxMore4.style.display = "inline";
+  }
+};
+/*  */
+const boxReadMore5 = () => {
+  if (boxDots5.style.display === "none") {
+    boxDots5.style.display = "inline";
+    boxMoreText5.innerHTML = "Learn more";
+    boxMore5.style.display = "none";
+  } else {
+    boxDots5.style.display = "none";
+    boxMoreText5.innerHTML = "Read less";
+    boxMore5.style.display = "inline";
+  }
+};
+/*  */
+const boxReadMore6 = () => {
+  if (boxDots6.style.display === "none") {
+    boxDots6.style.display = "inline";
+    boxMoreText6.innerHTML = "Learn more";
+    boxMore6.style.display = "none";
+  } else {
+    boxDots6.style.display = "none";
+    boxMoreText6.innerHTML = "Read less";
+    boxMore6.style.display = "inline";
+  }
+};
+/*  */
 // const boxReadMore = () => {
 //   boxDots.forEach((boxDots) => {
 //     boxMore.forEach((boxMore) => {
@@ -182,4 +230,7 @@ const boxReadMore3 = () => {
 boxMoreText1.addEventListener("click", boxReadMore1);
 boxMoreText2.addEventListener("click", boxReadMore2);
 boxMoreText3.addEventListener("click", boxReadMore3);
+boxMoreText4.addEventListener("click", boxReadMore4);
+boxMoreText5.addEventListener("click", boxReadMore5);
+boxMoreText6.addEventListener("click", boxReadMore6);
 // });
