@@ -456,6 +456,29 @@ main {
             margin: 0.3rem 0;
             text-align: left;
           }
+
+          &_more_btn {
+            font-family: "Montserrat", sans-serif;
+            color: $primary;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 0.5rem;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.8rem;
+            letter-spacing: 0.25px;
+            cursor: pointer;
+            margin-block: 1rem 3rem;
+
+            @media screen and (min-width: 992px) {
+              font-size: 1.1rem;
+            }
+            span {
+              @include span_icon();
+              color: $primary;
+            }
+          }
         }
       }
     }
@@ -533,6 +556,8 @@ main {
             color: $dark_text;
             width: 100%;
             max-width: 22rem;
+            min-height: 11rem;
+            height: 100%;
             font-weight: 400;
             @media screen and (min-width: 992px) {
               font-weight: 500;
@@ -575,7 +600,7 @@ main {
       }
     }
 
-    /*----------------------------CHOOSE-US SECTION---------------------------- */
+    /*----------------------------CONTACT-US SECTION---------------------------- */
     .form {
       &_left {
         @media screen and (min-width: 992px) {
@@ -962,6 +987,8 @@ main {
               font-size: 0.9rem;
               font-weight: 700;
               line-height: 2rem;
+              width: fit-content;
+              cursor: pointer;
 
               @media screen and (min-width: 992px) {
                 display: none;
@@ -970,7 +997,6 @@ main {
               span {
                 display: grid;
                 align-items: center;
-                cursor: pointer;
               }
             }
           }
