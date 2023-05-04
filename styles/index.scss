@@ -533,6 +533,8 @@ main {
             color: $dark_text;
             width: 100%;
             max-width: 22rem;
+            min-height: 11rem;
+            height: 100%;
             font-weight: 400;
             @media screen and (min-width: 992px) {
               font-weight: 500;
@@ -962,6 +964,8 @@ main {
               font-size: 0.9rem;
               font-weight: 700;
               line-height: 2rem;
+              width: fit-content;
+              cursor: pointer;
 
               @media screen and (min-width: 992px) {
                 display: none;
@@ -970,7 +974,6 @@ main {
               span {
                 display: grid;
                 align-items: center;
-                cursor: pointer;
               }
             }
           }

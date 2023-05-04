@@ -139,7 +139,7 @@
   }
 }
 .btn_main > span {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
   color: #fff;
 }
 .btn_main:hover {
@@ -273,6 +273,12 @@
   }
 }
 
+/* DESKTOP MORE TEXT */
+.box_more, .box_more2, .box_more3 {
+  display: none;
+}
+
+/*  */
 /* LINK TEXT */
 .link_text {
   text-decoration: underline;
@@ -975,6 +981,8 @@ main .main_inner .section_services_flexbox .box_quotes {
   color: #1f1f1f;
   width: 100%;
   max-width: 22rem;
+  min-height: 11rem;
+  height: 100%;
   font-weight: 400;
 }
 @media screen and (min-width: 992px) {
@@ -1003,7 +1011,7 @@ main .main_inner .section_services_flexbox .box .header_flex {
   }
 }
 main .main_inner .section_services_flexbox .box .header_flex span {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
   color: #fff;
   color: #008a37;
 }
@@ -1442,6 +1450,9 @@ main .main_inner .team_slides .slides_bottom .read_more_sec {
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   main .main_inner .team_slides .slides_bottom .read_more_sec {
@@ -1451,7 +1462,6 @@ main .main_inner .team_slides .slides_bottom .read_more_sec {
 main .main_inner .team_slides .slides_bottom .read_more_sec span {
   display: grid;
   align-items: center;
-  cursor: pointer;
 }
 main .main_inner .team_navigation {
   display: flex;
