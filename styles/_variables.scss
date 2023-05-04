@@ -16,7 +16,7 @@
 }
 
 @mixin span_icon {
-  margin-top: 0.5em;
+  margin-top: 0.3em;
   color: $white;
 }
 
@@ -282,6 +282,15 @@
   }
 }
 
+/* DESKTOP MORE TEXT */
+.box_more {
+  &,
+  &2,
+  &3 {
+    display: none;
+  }
+}
+/*  */
 /* LINK TEXT */
 .link_text {
   text-decoration: underline;
