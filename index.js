@@ -83,6 +83,22 @@ function showSlides(n) {
 const moreDots = document.querySelectorAll(".more_dots");
 const moreTexts = document.querySelectorAll(".more");
 const btnTexts = document.querySelectorAll(".more_btn");
+/* DESKTOP TEXT VARIABLES */
+const boxDots = document.querySelector(".box_dots");
+const boxMore = document.querySelector(".box_more");
+const boxMoreText = document.querySelector(".box_more_text");
+/*  */
+const boxDots2 = document.querySelector(".box_dots2");
+const boxMore2 = document.querySelector(".box_more2");
+const boxMoreText2 = document.querySelector(".box_more_text2");
+/*  */
+const boxDots3 = document.querySelector(".box_dots3");
+const boxMore3 = document.querySelector(".box_more3");
+const boxMoreText3 = document.querySelector(".box_more_text3");
+/*  */
+// const boxDots = document.querySelectorAll(".box_dots");
+// const boxMore = document.querySelectorAll(".box_more");
+// const boxMoreText = document.querySelectorAll(".box_more_text");
 
 /* MORE TEXT FUNCTION */
 const readMore = () => {
@@ -106,3 +122,64 @@ const readMore = () => {
 btnTexts.forEach((btnText) => {
   btnText.addEventListener("click", readMore);
 });
+
+/* DESKTOP MORE TEXT FUNCTIONS */
+const boxReadMore = () => {
+  if (boxDots.style.display === "none") {
+    boxDots.style.display = "inline";
+    boxMoreText.innerHTML = "Learn more";
+    boxMore.style.display = "none";
+  } else {
+    boxDots.style.display = "none";
+    boxMoreText.innerHTML = "Read less";
+    boxMore.style.display = "inline";
+  }
+};
+/*  */
+const boxReadMore2 = () => {
+  if (boxDots2.style.display === "none") {
+    boxDots2.style.display = "inline";
+    boxMoreText2.innerHTML = "Learn more";
+    boxMore2.style.display = "none";
+  } else {
+    boxDots2.style.display = "none";
+    boxMoreText2.innerHTML = "Read less";
+    boxMore2.style.display = "inline";
+  }
+};
+/*  */
+const boxReadMore3 = () => {
+  if (boxDots3.style.display === "none") {
+    boxDots3.style.display = "inline";
+    boxMoreText3.innerHTML = "Learn more";
+    boxMore3.style.display = "none";
+  } else {
+    boxDots3.style.display = "none";
+    boxMoreText3.innerHTML = "Read less";
+    boxMore3.style.display = "inline";
+  }
+};
+/*  */
+// const boxReadMore = () => {
+//   boxDots.forEach((boxDots) => {
+//     boxMore.forEach((boxMore) => {
+//       boxMoreText.forEach((boxMoreText) => {
+//         if (boxDots.style.display === "none") {
+//           boxDots.style.display = "inline";
+//           boxMoreText.innerHTML = "Learn more";
+//           boxMore.style.display = "none";
+//         } else {
+//           boxDots.style.display = "none";
+//           boxMoreText.innerHTML = "Read less";
+//           boxMore.style.display = "inline";
+//         }
+//       });
+//     });
+//   });
+// };
+
+// boxMoreText.forEach((boxMoreText) => {
+boxMoreText.addEventListener("click", boxReadMore);
+boxMoreText2.addEventListener("click", boxReadMore2);
+boxMoreText3.addEventListener("click", boxReadMore3);
+// });
