@@ -137,6 +137,26 @@ btnTexts.forEach((btnText) => {
 
 /* DESKTOP MORE TEXT FUNCTIONS */
 const boxReadMore1 = () => {
+  boxDots2.style.display = "inline";
+  boxMoreText2.innerHTML = "Learn more";
+  boxMore2.style.display = "none";
+  /*  */
+  boxDots3.style.display = "inline";
+  boxMoreText3.innerHTML = "Learn more";
+  boxMore3.style.display = "none";
+  /*  */
+  boxDots4.style.display = "inline";
+  boxMoreText4.innerHTML = "Learn more";
+  boxMore4.style.display = "none";
+  /*  */
+  boxDots5.style.display = "inline";
+  boxMoreText5.innerHTML = "Learn more";
+  boxMore5.style.display = "none";
+  /*  */
+  boxDots6.style.display = "inline";
+  boxMoreText6.innerHTML = "Learn more";
+  boxMore6.style.display = "none";
+  /*  */
   if (boxDots1.style.display === "none") {
     boxDots1.style.display = "inline";
     boxMoreText1.innerHTML = "Learn more";
@@ -149,6 +169,26 @@ const boxReadMore1 = () => {
 };
 /*  */
 const boxReadMore2 = () => {
+  boxDots1.style.display = "inline";
+  boxMoreText1.innerHTML = "Learn more";
+  boxMore1.style.display = "none";
+  /*  */
+  boxDots3.style.display = "inline";
+  boxMoreText3.innerHTML = "Learn more";
+  boxMore3.style.display = "none";
+  /*  */
+  boxDots4.style.display = "inline";
+  boxMoreText4.innerHTML = "Learn more";
+  boxMore4.style.display = "none";
+  /*  */
+  boxDots5.style.display = "inline";
+  boxMoreText5.innerHTML = "Learn more";
+  boxMore5.style.display = "none";
+  /*  */
+  boxDots6.style.display = "inline";
+  boxMoreText6.innerHTML = "Learn more";
+  boxMore6.style.display = "none";
+  /*  */
   if (boxDots2.style.display === "none") {
     boxDots2.style.display = "inline";
     boxMoreText2.innerHTML = "Learn more";
@@ -161,6 +201,26 @@ const boxReadMore2 = () => {
 };
 /*  */
 const boxReadMore3 = () => {
+  boxDots1.style.display = "inline";
+  boxMoreText1.innerHTML = "Learn more";
+  boxMore1.style.display = "none";
+  /*  */
+  boxDots2.style.display = "inline";
+  boxMoreText2.innerHTML = "Learn more";
+  boxMore2.style.display = "none";
+  /*  */
+  boxDots4.style.display = "inline";
+  boxMoreText4.innerHTML = "Learn more";
+  boxMore4.style.display = "none";
+  /*  */
+  boxDots5.style.display = "inline";
+  boxMoreText5.innerHTML = "Learn more";
+  boxMore5.style.display = "none";
+  /*  */
+  boxDots6.style.display = "inline";
+  boxMoreText6.innerHTML = "Learn more";
+  boxMore6.style.display = "none";
+  /*  */
   if (boxDots3.style.display === "none") {
     boxDots3.style.display = "inline";
     boxMoreText3.innerHTML = "Learn more";
@@ -173,6 +233,26 @@ const boxReadMore3 = () => {
 };
 /*  */
 const boxReadMore4 = () => {
+  boxDots1.style.display = "inline";
+  boxMoreText1.innerHTML = "Learn more";
+  boxMore1.style.display = "none";
+  /*  */
+  boxDots2.style.display = "inline";
+  boxMoreText2.innerHTML = "Learn more";
+  boxMore2.style.display = "none";
+  /*  */
+  boxDots3.style.display = "inline";
+  boxMoreText3.innerHTML = "Learn more";
+  boxMore3.style.display = "none";
+  /*  */
+  boxDots5.style.display = "inline";
+  boxMoreText5.innerHTML = "Learn more";
+  boxMore5.style.display = "none";
+  /*  */
+  boxDots6.style.display = "inline";
+  boxMoreText6.innerHTML = "Learn more";
+  boxMore6.style.display = "none";
+  /*  */
   if (boxDots4.style.display === "none") {
     boxDots4.style.display = "inline";
     boxMoreText4.innerHTML = "Learn more";
@@ -185,6 +265,26 @@ const boxReadMore4 = () => {
 };
 /*  */
 const boxReadMore5 = () => {
+  boxDots1.style.display = "inline";
+  boxMoreText1.innerHTML = "Learn more";
+  boxMore1.style.display = "none";
+  /*  */
+  boxDots2.style.display = "inline";
+  boxMoreText2.innerHTML = "Learn more";
+  boxMore2.style.display = "none";
+  /*  */
+  boxDots3.style.display = "inline";
+  boxMoreText3.innerHTML = "Learn more";
+  boxMore3.style.display = "none";
+  /*  */
+  boxDots4.style.display = "inline";
+  boxMoreText4.innerHTML = "Learn more";
+  boxMore4.style.display = "none";
+  /*  */
+  boxDots6.style.display = "inline";
+  boxMoreText6.innerHTML = "Learn more";
+  boxMore6.style.display = "none";
+  /*  */
   if (boxDots5.style.display === "none") {
     boxDots5.style.display = "inline";
     boxMoreText5.innerHTML = "Learn more";
@@ -197,6 +297,26 @@ const boxReadMore5 = () => {
 };
 /*  */
 const boxReadMore6 = () => {
+  boxDots1.style.display = "inline";
+  boxMoreText1.innerHTML = "Learn more";
+  boxMore1.style.display = "none";
+  /*  */
+  boxDots2.style.display = "inline";
+  boxMoreText2.innerHTML = "Learn more";
+  boxMore2.style.display = "none";
+  /*  */
+  boxDots3.style.display = "inline";
+  boxMoreText3.innerHTML = "Learn more";
+  boxMore3.style.display = "none";
+  /*  */
+  boxDots4.style.display = "inline";
+  boxMoreText4.innerHTML = "Learn more";
+  boxMore4.style.display = "none";
+  /*  */
+  boxDots5.style.display = "inline";
+  boxMoreText5.innerHTML = "Learn more";
+  boxMore5.style.display = "none";
+  /*  */
   if (boxDots6.style.display === "none") {
     boxDots6.style.display = "inline";
     boxMoreText6.innerHTML = "Learn more";
