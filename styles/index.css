@@ -274,7 +274,7 @@
 }
 
 /* DESKTOP MORE TEXT */
-.box_more1, .box_more2, .box_more3 {
+.box_more1, .box_more2, .box_more3, .box_more4, .box_more5, .box_more6 {
   display: none;
 }
 
@@ -647,7 +647,7 @@ main .main_inner {
   /* -------------------------------------HERO SECTION------------------------------------- */
   /*----------------------------CHOOSE-US SECTION---------------------------- */
   /*---------------------------OUR-SERVICES SECTION---------------------------- */
-  /*----------------------------CHOOSE-US SECTION---------------------------- */
+  /*----------------------------CONTACT-US SECTION---------------------------- */
   /*---------------------------NEWS-UPDATE SECTION---------------------------- */
   /*---------------------------TEAM SECTION---------------------------- */
   /*---------------------------FOOTER SECTION---------------------------- */
@@ -902,6 +902,30 @@ main .main_inner .choose_us_sec .contents_header .green_dot {
 main .main_inner .choose_us_sec .contents_quotes {
   margin: 0.3rem 0;
   text-align: left;
+}
+main .main_inner .choose_us_sec .contents_more_btn {
+  font-family: "Montserrat", sans-serif;
+  color: #008a37;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.25px;
+  cursor: pointer;
+  margin-block: 1rem 3rem;
+}
+@media screen and (min-width: 992px) {
+  main .main_inner .choose_us_sec .contents_more_btn {
+    font-size: 1.1rem;
+  }
+}
+main .main_inner .choose_us_sec .contents_more_btn span {
+  margin-top: 0.3em;
+  color: #fff;
+  color: #008a37;
 }
 main .main_inner .section_services_bottom {
   margin: 2rem 0;
