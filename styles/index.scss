@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
-@import "./colors";
-@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+@import './colors';
+@import './variables';
 
 *,
 *::after,
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
 }
 h1,
@@ -27,7 +27,7 @@ h5,
 h6 {
   font-weight: 700;
   font-style: normal;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 ul {
@@ -40,12 +40,12 @@ a {
 }
 
 input {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: $dark_text;
 
   &::placeholder {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     color: $placeholder;
@@ -137,6 +137,7 @@ header {
         background: $white;
         font-weight: 700;
         font-size: 1.1rem;
+        cursor: pointer;
         color: $btn_bg;
         &:hover {
           color: $white;
@@ -458,7 +459,7 @@ main {
           }
 
           &_more_btn {
-            font-family: "Montserrat", sans-serif;
+            font-family: 'Montserrat', sans-serif;
             color: $primary;
             display: flex;
             align-items: center;
@@ -538,7 +539,7 @@ main {
             }
           }
           &_header {
-            font-family: "Montserrat", sans-serif;
+            font-family: 'Montserrat', sans-serif;
             color: $primary;
             font-size: 1.6rem;
             line-height: 3.2rem;
@@ -565,7 +566,7 @@ main {
           }
 
           .header_flex {
-            font-family: "Montserrat", sans-serif;
+            font-family: 'Montserrat', sans-serif;
             color: $primary;
             display: flex;
             align-items: center;
@@ -711,7 +712,7 @@ main {
       }
 
       &_header {
-        font-family: "Montserrat", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
         font-weight: 700;
         letter-spacing: 0em;

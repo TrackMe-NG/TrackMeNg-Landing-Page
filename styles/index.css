@@ -558,6 +558,7 @@ header .navbar_inner .nav_btn {
   background: #fff;
   font-weight: 700;
   font-size: 1.1rem;
+  cursor: pointer;
   color: #00ca54;
 }
 header .navbar_inner .nav_btn:hover {
