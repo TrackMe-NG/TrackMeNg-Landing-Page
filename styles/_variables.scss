@@ -6,7 +6,7 @@
   line-height: normal;
   letter-spacing: 0em;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: $dark_text;
 
   @media screen and (min-width: 992px) {
@@ -349,7 +349,7 @@
       }
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -373,19 +373,19 @@
       }
 
       &:nth-child(1)::before {
-        content: "\f09a";
+        content: '\f09a';
       }
 
       &:nth-child(2)::before {
-        content: "\f16d";
+        content: '\f16d';
       }
 
       &:nth-child(3)::before {
-        content: "\f232";
+        content: '\f232';
       }
 
       &:nth-child(4)::before {
-        content: "\f099";
+        content: '\f099';
       }
     }
   }
