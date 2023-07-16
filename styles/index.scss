@@ -828,6 +828,11 @@ main {
     }
 
     /*---------------------------TEAM SECTION---------------------------- */
+    /* HIDE TEAM SECTION */
+    #team_id {
+      display: none !important;
+    }
+
     .team {
       &_sec {
         background: $secondary_bg;
