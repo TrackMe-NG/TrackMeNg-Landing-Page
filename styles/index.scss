@@ -117,17 +117,12 @@ header {
       justify-content: space-between;
 
       .nav_logo {
-        width: 10rem;
-        height: 4rem;
+        width: 3rem;
+        aspect-ratio: 1/1;
         position: relative;
-        inset: 0 -1.8rem;
 
         @media screen and (min-width: 992px) {
-          width: 12rem;
-          height: 6rem;
-        }
-        @media screen and (min-width: 1200px) {
-          inset: 0 -2.4rem;
+          width: 4.5rem;
         }
       }
       .nav_btn {
