@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"); /*  MIXINS VARIABLES */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;0,1000;1,400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); /*  MIXINS VARIABLES */
 /*  */
 .container_main {
   padding: 0 1rem;
@@ -83,18 +83,16 @@
 }
 .small_quotes.hero {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: normal;
 }
 @media screen and (min-width: 576px) {
   .small_quotes.hero {
     max-width: 38rem;
-    line-height: 2rem;
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 992px) {
   .small_quotes.hero {
-    line-height: 1.8rem;
     color: #767873;
   }
 }
@@ -146,6 +144,50 @@
   opacity: 1;
 }
 
+/* ---------------------------PRE-LOADER--------------------------- */
+.preloader {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background: #fff;
+}
+.preloader_inner {
+  position: absolute;
+  margin: -15em 0 0 -15em;
+  font-size: 2px;
+  top: 50vh;
+  left: 50vw;
+  background: #fff;
+  border-top: 0.8em solid rgba(35, 35, 35, 0.2);
+  border-right: 0.8em solid rgba(35, 35, 35, 0.2);
+  border-bottom: 0.8em solid rgba(35, 35, 35, 0.2);
+  border-left: 0.8em solid #008a37;
+  transform: translateZ(0);
+  animation: preloader 0.7s infinite linear;
+}
+.preloader_inner, .preloader_inner:after {
+  border-radius: 50%;
+  width: 30em;
+  height: 30em;
+}
+.preloader.hidden {
+  opacity: 0;
+}
+
+@keyframes preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* ---------------------------NAV-BTN--------------------------- */
 .nav_btn {
   padding: 1rem 2rem;
@@ -189,7 +231,7 @@
   }
 }
 .flex_box_header {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 700;
   line-height: 5rem;
   letter-spacing: 0em;
@@ -282,6 +324,7 @@
 /* LINK TEXT */
 .link_text {
   text-decoration: underline;
+  cursor: pointer;
 }
 .link_text.primary:hover {
   color: #00ca54;
@@ -364,10 +407,71 @@
   content: "\f099";
 }
 
+/* ADDING SCROLL ANIMATIONS */
+.animations_up {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.5s;
+}
+
+/*  */
+.animations_down {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.5s;
+}
+
+/*  */
+.animations_left {
+  opacity: 0;
+  transform: translateX(-110px);
+  transition: all 0.6s ease-out;
+  transition-delay: 0.4s;
+  overflow: hidden;
+}
+@media screen and (min-width: 1400px) {
+  .animations_left_special {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.6s ease-out;
+    transition-delay: 0.4s;
+  }
+}
+
+/*  */
+.animations_right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.6s ease-out;
+  transition-delay: 0.4s;
+}
+
+/*  */
+.animations {
+  opacity: 0;
+  transform: translateY(300px);
+  transition: all 0.6s ease-out;
+  transition-delay: 0.4s;
+}
+
+/*  */
+.scroll-animation {
+  opacity: 1;
+  transform: translate(0);
+}
+
 /* STYLES-SUMMARY NOTES
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif;
+
+
+UPDATED FONTS
+ font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif; 
 
 */
 /* media screens */
@@ -422,7 +526,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -434,7 +538,7 @@ h5,
 h6 {
   font-weight: 700;
   font-style: normal;
-  font-family: "Playfair Display", serif;
+  font-family: "Inter", sans-serif;
 }
 
 ul {
@@ -447,12 +551,12 @@ a {
 }
 
 input {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   color: #1f1f1f;
 }
 input::-moz-placeholder {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 500;
   color: #abaca6;
@@ -460,7 +564,7 @@ input::-moz-placeholder {
   line-height: 1.2rem;
 }
 input::placeholder {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 500;
   color: #abaca6;
@@ -519,7 +623,7 @@ header .navbar ul li {
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: 500;
-  line-height: 24px;
+  line-height: normal;
   letter-spacing: 0em;
   text-align: left;
   color: #1f1f1f;
@@ -535,20 +639,13 @@ header .navbar_inner {
   justify-content: space-between;
 }
 header .navbar_inner .nav_logo {
-  width: 10rem;
-  height: 4rem;
+  width: 3rem;
+  aspect-ratio: 1/1;
   position: relative;
-  inset: 0 -1.8rem;
 }
 @media screen and (min-width: 992px) {
   header .navbar_inner .nav_logo {
-    width: 12rem;
-    height: 6rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  header .navbar_inner .nav_logo {
-    inset: 0 -2.4rem;
+    width: 4.5rem;
   }
 }
 header .navbar_inner .nav_btn {
@@ -558,6 +655,7 @@ header .navbar_inner .nav_btn {
   background: #fff;
   font-weight: 700;
   font-size: 1.1rem;
+  cursor: pointer;
   color: #00ca54;
 }
 header .navbar_inner .nav_btn:hover {
@@ -650,6 +748,7 @@ main .main_inner {
   /*----------------------------CONTACT-US SECTION---------------------------- */
   /*---------------------------NEWS-UPDATE SECTION---------------------------- */
   /*---------------------------TEAM SECTION---------------------------- */
+  /* HIDE TEAM SECTION */
   /*---------------------------FOOTER SECTION---------------------------- */
 }
 main .main_inner .hero_sec {
@@ -876,7 +975,7 @@ main .main_inner .choose_us_sec .contents_header {
   line-height: normal;
   letter-spacing: 0em;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #1f1f1f;
   display: flex;
   align-items: center;
@@ -1309,6 +1408,9 @@ main .main_inner .news_right img {
     max-width: 100%;
     height: 30rem;
   }
+}
+main .main_inner #team_id {
+  display: none !important;
 }
 main .main_inner .team_sec {
   background: #323638;
