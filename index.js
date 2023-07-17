@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     preloader.classList.add('hidden');
-  }, 250);
+  }, 500);
 });
 
 /*  */
@@ -388,7 +388,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.5 }
+  { threshold: 0.1 }
 );
 
 for (let i = 0; i < animationUp.length; i++) {
