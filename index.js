@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setTimeout(() => {
     preloader.classList.add('hidden');
-  }, 500);
+  }, 1000);
 });
 
 /*  */
