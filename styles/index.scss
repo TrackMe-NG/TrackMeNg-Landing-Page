@@ -241,6 +241,7 @@ main {
     margin-top: 6rem;
   }
   .main_inner {
+    position: relative;
     /* -------------------------------------HERO SECTION------------------------------------- */
 
     .hero {
@@ -432,761 +433,88 @@ main {
         }
       }
     }
-
-    /*----------------------------CHOOSE-US SECTION---------------------------- */
-
-    .choose_us {
-      &_sec {
-        .contents {
-          &_list {
-            display: grid;
-            gap: 1rem;
-            align-items: center;
-            justify-content: center;
-            @media screen and (min-width: 992px) {
-              margin-top: 0.5rem;
-            }
-          }
-          &_header {
-            @include small_header();
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-
-            @media screen and (min-width: 992px) {
-              gap: 1rem;
-            }
-            .green_dot {
-              background: $primary;
-              width: 1rem;
-              aspect-ratio: 1/1;
-              border-radius: 50%;
-            }
-          }
-
-          &_quotes {
-            margin: 0.3rem 0;
-            text-align: left;
-          }
-
-          &_more_btn {
-            font-family: "Montserrat", sans-serif;
-            color: $primary;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 0.5rem;
-            font-size: 1rem;
-            font-weight: 700;
-            line-height: 1.8rem;
-            letter-spacing: 0.25px;
-            cursor: pointer;
-            margin-block: 1rem 3rem;
-
-            @media screen and (min-width: 992px) {
-              font-size: 1.1rem;
-            }
-            span {
-              @include span_icon();
-              color: $primary;
-            }
-          }
-        }
-      }
-    }
-
-    /*---------------------------OUR-SERVICES SECTION---------------------------- */
-    .section_services {
-      &_bottom {
-        margin: 2rem 0;
-      }
-      &_flexbox {
-        width: 100%;
-        padding: 0.2rem;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        @media screen and (min-width: 576px) {
-          padding: 1.5rem;
-        }
-        @media screen and (min-width: 992px) {
-          gap: 1.2rem;
-          flex-direction: row;
-        }
-        @media screen and (min-width: 1200px) {
-          gap: 1.5rem;
-        }
-        .box {
-          border-radius: 1rem;
-          width: 100%;
-          max-width: fit-content;
-          height: 100%;
-          min-height: 46vh;
-          box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-            rgba(17, 17, 26, 0.1) 0px 0px 8px;
-          cursor: pointer;
-
-          &:hover {
-            box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-          }
-
-          &:nth-child(1) {
-            background: $white;
-          }
-          &:nth-child(2) {
-            background: $flex2_bg;
-          }
-          &:nth-child(3) {
-            background: $flex3_bg;
-          }
-
-          &_inner {
-            padding: 1rem;
-            text-align: center;
-            @media screen and (min-width: 992px) {
-              text-align: left;
-            }
-          }
-          &_header {
-            font-family: "Montserrat", sans-serif;
-            color: $primary;
-            font-size: 1.6rem;
-            line-height: 3.2rem;
-            font-weight: 600;
-
-            @media screen and (min-width: 576px) {
-              font-size: 2rem;
-              line-height: 4rem;
-            }
-          }
-
-          &_quotes {
-            font-size: 1rem;
-            line-height: 1.5rem;
-            color: $dark_text;
-            width: 100%;
-            max-width: 22rem;
-            min-height: 11rem;
-            height: 100%;
-            font-weight: 400;
-            @media screen and (min-width: 992px) {
-              font-weight: 500;
-            }
-          }
-
-          .header_flex {
-            font-family: "Montserrat", sans-serif;
-            color: $primary;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            font-size: 1rem;
-            font-weight: 700;
-            line-height: 1.8rem;
-            letter-spacing: 0.25px;
-            cursor: pointer;
-            margin-block: 1rem 3rem;
-
-            @media screen and (min-width: 992px) {
-              justify-content: flex-start;
-              font-size: 1.1rem;
-            }
-            span {
-              @include span_icon();
-              color: $primary;
-            }
-          }
-
-          &_img {
-            max-width: 100%;
-            margin: 0 auto;
-
-            img {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-
-    /*----------------------------CONTACT-US SECTION---------------------------- */
-    .form {
-      &_left {
-        @media screen and (min-width: 992px) {
-          width: 100%;
-        }
-
-        form {
-          width: 100vw;
-          display: grid;
-          gap: 1rem;
-          justify-content: center;
-          align-items: center;
-          @media screen and (min-width: 700px) {
-            max-width: 45rem;
-          }
-
-          @media screen and (min-width: 992px) {
-            width: 48vw;
-          }
-          @media screen and (min-width: 1400px) {
-            gap: 1.8rem;
-          }
-
-          input {
-            height: 3rem;
-            width: 100vw;
-            border-radius: 4px;
-            padding: 0.5rem;
-            border: none;
-            outline: none;
-            background: $form_bg;
-
-            &::placeholder {
-              color: $light_text;
-              font-family: Roboto;
-              font-size: 0.8rem;
-              font-weight: 500;
-              line-height: 20px;
-              letter-spacing: 0em;
-              text-align: left;
-            }
-          }
-
-          textarea {
-            height: max-content;
-            border-radius: 4px;
-            padding: 0.5rem;
-            border: none;
-            outline: none;
-            background: $form_bg;
-
-            &::placeholder {
-              color: $light_text;
-              font-family: Roboto;
-              font-size: 14px;
-              font-weight: 500;
-              line-height: 20px;
-              letter-spacing: 0em;
-            }
-          }
-        }
-      }
-
-      &_right {
-        max-width: 100%;
-        @media screen and (min-width: 992px) {
-          width: 100%;
-        }
-        img {
-          width: 100%;
-        }
-      }
-    }
-
-    /*---------------------------NEWS-UPDATE SECTION---------------------------- */
-    .news {
-      &_update_sec_inner {
-        display: grid;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        color: $white;
-        @media screen and (min-width: 992px) {
-          display: flex;
-          text-align: left;
-        }
-      }
-      &_left {
-        background: $secondary_bg;
-        height: 100%;
-        padding: 1rem;
-        display: grid;
-        gap: 0.8em;
-
-        @media screen and (min-width: 576px) {
-          padding: 2.5rem 1rem;
-        }
-        @media screen and (min-width: 992px) {
-          width: 65%;
-          height: 30rem;
-          gap: 1rem;
-          padding: 1rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-
-      &_header {
-        font-family: "Montserrat", sans-serif;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 0em;
-        width: 100%;
-        margin: 0 auto;
-        max-width: 18rem;
-        text-align: center;
-        @media screen and (min-width: 992px) {
-          line-height: normal;
-          font-size: 1.5rem;
-          font-weight: 700;
-          line-height: 44px;
-          letter-spacing: 0em;
-          text-align: left;
-          max-width: 40rem;
-          @media screen and (min-width: 992px) {
-            font-size: 2rem;
-          }
-        }
-      }
-
-      &_quotes {
-        width: 100%;
-        max-width: 30rem;
-        margin-block: 0 1rem;
-        @media screen and (min-width: 992px) {
-          max-width: 40rem;
-          text-align: left;
-        }
-      }
-
-      &_input {
-        display: flex;
-        justify-content: space-between;
-        background-color: $white;
-        height: 2.5rem;
-        width: 100%;
-        border-radius: 1rem;
-        padding: 0.2rem;
-        margin: 0 auto;
-        max-width: 35rem;
-
-        @media screen and (min-width: 576px) {
-          height: 3.5rem;
-        }
-
-        @media screen and (min-width: 992px) {
-          max-width: 40rem;
-          height: 4rem;
-        }
-        input {
-          border: none;
-          outline: none;
-          background: transparent;
-          padding: 0 0.8rem;
-
-          &::placeholder {
-            color: $light_text;
-            font-family: Roboto;
-            font-size: 0.8rem;
-            font-weight: 500;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: left;
-            @media screen and (min-width: 576px) {
-              font-size: 1.1rem;
-            }
-          }
-        }
-      }
-
-      &_btn {
-        border-radius: 1rem;
-        border: none;
-        outline: none;
-        background: $btn_bg;
-        color: $white;
-        font-weight: 600;
-        padding: 0 1.2rem;
-        display: flex;
-        font-size: 0.8rem;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        opacity: 0.8;
-        @media screen and (min-width: 400px) {
-          padding: 0 10%;
-        }
-
-        @media screen and (min-width: 576px) {
-          font-size: 1.1rem;
-        }
-        &:hover {
-          opacity: 1;
-        }
-      }
-
-      &_right {
-        display: none;
-        @media screen and (min-width: 992px) {
-          display: block;
-          max-width: 100%;
-        }
-
-        img {
-          width: 100%;
-          @media screen and (min-width: 992px) {
-            max-width: 100%;
-            height: 30rem;
-          }
-        }
-      }
-    }
-
-    /*---------------------------TEAM SECTION---------------------------- */
-    /* HIDE TEAM SECTION */
-    #team_id {
-      display: none !important;
-    }
-
-    .team {
-      &_sec {
-        background: $secondary_bg;
-        color: $white;
-        margin: 3rem 0;
-
-        @media screen and (min-width: 992px) {
-          padding: 2.5rem;
-        }
-
-        &_header {
-          margin-bottom: 1rem;
-
-          @media screen and (min-width: 992px) {
-            margin-bottom: 1.5rem;
-          }
-        }
-      }
-
-      &_slides {
-        width: 100%;
-
-        .slides {
-          margin: 1rem 0;
-          border-radius: 1rem;
-          overflow: hidden;
-          width: 100%;
-          height: 100%;
-          max-width: 20rem;
-          min-height: 20rem;
-          background: $white;
-          color: $dark_text;
-          margin: 0 auto;
-
-          @media screen and (min-width: 992px) {
-            min-width: 100%;
-            padding: 2rem;
-            max-height: 22rem;
-          }
-          &_inner {
-            width: 100%;
-            height: 100%;
-
-            @media screen and (min-width: 992px) {
-              display: flex;
-              gap: 1rem;
-              width: 100%;
-              max-width: 100%;
-              overflow: unset;
-              justify-content: flex-start;
-            }
-          }
-
-          &_top {
-            width: 100%;
-
-            @media screen and (min-width: 992px) {
-              min-width: 20rem;
-            }
-
-            img {
-              width: 100%;
-              height: 100%;
-              max-height: 18rem;
-
-              @media screen and (min-width: 992px) {
-                height: 100%;
-                max-width: 20rem;
-              }
-            }
-          }
-
-          &_bottom {
-            padding: 0.4rem;
-            width: 100%;
-            max-width: 30rem;
-            margin: 0 auto;
-
-            @media screen and (min-width: 992px) {
-              min-width: 100%;
-              padding: 0;
-              margin: 0;
-            }
-            &_header {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              gap: 0.5rem;
-
-              @media screen and (min-width: 992px) {
-                justify-content: flex-start;
-              }
-
-              &_dot {
-                background: $dot_bg;
-                width: 0.5rem;
-                aspect-ratio: 1/1;
-                border-radius: 50%;
-              }
-            }
-
-            .team {
-              &_name {
-                font-size: 1rem;
-                line-height: 2rem;
-                font-weight: 700;
-                letter-spacing: 0em;
-                text-align: left;
-                color: $dark_text;
-                @media screen and (min-width: 992px) {
-                  font-size: 2rem;
-                  line-height: 3rem;
-                }
-              }
-
-              &_role {
-                font-size: 0.8rem;
-                font-weight: 500;
-                letter-spacing: 0em;
-                text-align: left;
-                color: $team_role;
-              }
-            }
-
-            &_quotes {
-              font-size: 0.8rem;
-              color: $team_quote;
-              font-weight: 500;
-              line-height: 1rem;
-              letter-spacing: 0em;
-              text-align: center;
-              width: 100%;
-              max-width: 30rem;
-              margin: 0 auto;
-
-              @media screen and (min-width: 992px) {
-                min-width: 55vw;
-                line-height: 1.1rem;
-                margin: 0;
-                text-align: left;
-              }
-              @media screen and (min-width: 1200px) {
-                min-width: 60vw;
-                line-height: 1.2rem;
-                font-size: 1rem;
-              }
-              @media screen and (min-width: 1400px) {
-                line-height: 1.3rem;
-              }
-            }
-
-            .read_more_sec {
-              display: flex;
-              align-items: center;
-              margin: 0.5rem 0;
-              color: $btn_bg;
-              gap: 0.5rem;
-              font-size: 0.9rem;
-              font-weight: 700;
-              line-height: 2rem;
-              width: fit-content;
-              cursor: pointer;
-
-              @media screen and (min-width: 992px) {
-                display: none;
-              }
-
-              span {
-                display: grid;
-                align-items: center;
-              }
-            }
-          }
-        }
-      }
-
-      &_navigation {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 2rem;
-        gap: 1rem;
-
-        @media screen and (min-width: 992px) {
-          margin-top: 3rem;
-          gap: 5rem;
-        }
-
-        &_icon {
-          font-size: 1.5rem;
-          color: $white;
-          cursor: pointer;
-          transition: all 0.2s ease-in-out;
-        }
-
-        &_dot {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-          inset: -0.2rem 0;
-          gap: 0.5rem;
-
-          @media screen and (min-width: 992px) {
-            gap: 1rem;
-          }
-
-          .dot {
-            cursor: pointer;
-            width: 0.6rem;
-            aspect-ratio: 1/1;
-            background-color: $white;
-            border-radius: 50%;
-            transition: 0.6s;
-
-            &:hover,
-            &.active {
-              background: $btn_bg;
-            }
-          }
-        }
-      }
-    }
-
-    /*---------------------------FOOTER SECTION---------------------------- */
-
-    .footer {
-      background: $secondary_bg;
-      color: $white;
-
-      &_inner {
-        padding: 1.5rem 0;
-        @media screen and (min-width: 992px) {
-          padding: 3rem 0;
-        }
-      }
-
-      &_desktop_top {
-        display: none;
-        @media screen and (min-width: 992px) {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-      }
-
-      &_top {
-        display: grid;
-        align-items: center;
-        gap: 2.5rem;
-
-        @media screen and (min-width: 576px) {
-          display: flex;
-          align-items: flex-start;
-          gap: 4rem;
-        }
-
-        @media screen and (min-width: 992px) {
-          justify-content: space-around;
-        }
-        .quick_links {
-          & > ul {
-            display: grid;
-            gap: 0.5rem;
-            @media screen and (min-width: 992px) {
-              gap: 1rem;
-            }
-            li {
-              font-weight: 500;
-              font-size: 0.8rem;
-
-              @media screen and (min-width: 992px) {
-                font-size: 1rem;
-              }
-
-              &:hover {
-                color: $btn_bg;
-              }
-            }
-          }
-        }
-
-        .keep_in_touch {
-          & > ul {
-            display: grid;
-            gap: 0.5rem;
-
-            @media screen and (min-width: 992px) {
-              gap: 1em;
-            }
-
-            li {
-              font-weight: 500;
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              text-align: left;
-              gap: 0.5rem;
-              font-size: 0.8rem;
-
-              @media screen and (min-width: 992px) {
-                font-size: 1rem;
-                gap: 1rem;
-              }
-              .social_name {
-                font-weight: 600;
-              }
-            }
-          }
-        }
-      }
-
-      &_header {
-        font-size: 1.2rem;
-        margin-block: 0 1rem;
-
-        @media screen and (min-width: 992px) {
-          font-size: 1.6rem;
-          margin-block: 0 2rem;
-        }
-      }
-
-      &_mobile_sec {
-        @media screen and (min-width: 992px) {
-          display: none;
-        }
-      }
-      &_line {
-        border: 1px solid $white;
-        opacity: 0.15;
-        margin: 3rem 0;
-
-        &.desktop {
-          display: none;
-          @media screen and (min-width: 992px) {
-            display: block;
-          }
-        }
-
-        @media screen and (min-width: 992px) {
-          margin: 5rem 0;
-        }
-      }
-    }
   }
+}
+
+button {
+  background-color: rgb(82, 189, 255);
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-section {
+  position: relative;
+  width: 300px;
+  min-height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+.video-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; /* Hidden initially */
+}
+.form-section {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 280px;
+}
+.form-section input[type="text"],
+.form-section input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-section label {
+  font-size: 14px;
+}
+.form-section button {
+  margin-top: 10px;
+  padding: 8px;
+  width: 48%;
+}
+.form-section .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.form-section .checkbox {
+  display: flex;
+  align-items: center;
+}
+.form-section .checkbox input {
+  margin-right: 5px;
 }
